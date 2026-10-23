@@ -1,0 +1,6 @@
+OWNER owner_a;
+DEVICE coil_a TYPE 1;
+DEVICE coil_b TYPE 3;
+COMMAND coil_a activate;
+COMMAND coil_b activate;
+COMMAND coil_a deactivate;
