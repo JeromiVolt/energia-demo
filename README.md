@@ -1,4 +1,4 @@
-# Energia · Jeremy Pad
+# Energia · JeromiPAD
 
 Исследовательская концепция и открываемый в браузере демонстрационный прототип.
 Это новая программная модель по описанию проекта, а не публикация существующей
@@ -32,6 +32,7 @@ python3 -m http.server 8080 --bind 127.0.0.1 --directory site/dist
 - [Модель и ограничения](energia_demo/README.md)
 - [Сайт](site/README.md)
 - [Технический проект и семь известных уравнений](docs/TECHNICAL_SPEC.md)
+- [Выводы формул, размерности и условные расчёты](docs/MATHEMATICS.md)
 - [Реестр утверждений и доказательств](docs/EVIDENCE.md)
 - [Задание для Your dot](docs/DOT_BRIEF.md)
 
