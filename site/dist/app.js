@@ -1,7 +1,8 @@
+(() => {
 'use strict';
 // Local illustrative controls. No network calls, wallet APIs or persisted data.
 const startButton = document.getElementById('meditate');
-const resetButton = document.getElementById('reset');
+const resetButton = document.getElementById('timer-reset');
 const timer = document.getElementById('timer');
 const status = document.getElementById('timer-status');
 let deadline = 0;
@@ -31,11 +32,5 @@ resetButton.addEventListener('click', () => {
   timer.textContent = '01:00';
   status.textContent = 'Таймер сброшен.';
 });
-const amount = document.getElementById('amount');
-const output = document.getElementById('exchange-output');
-amount.addEventListener('input', () => {
-  const value = amount.valueAsNumber;
-  const valid = Number.isFinite(value) && value >= 0 && value <= 1000000;
-  amount.setAttribute('aria-invalid', String(!valid));
-  output.value = valid ? `${(value * 0.001).toFixed(6)} DEMO-ETH` : 'Введите число от 0 до 1 000 000';
-});
+
+})();
